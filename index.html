@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NASA - Foto do seu Aniversário 🚀</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>Assuntos da NASA no seu Aniversário</h1>
+
+    <p class="subtitle">
+      Descubra qual foto astronômica a NASA publicou no dia em que você nasceu!
+    </p>
+
+    <form id="form-nasa">
+
+      <label for="data-nascimento">
+        Selecione sua data de nascimento:
+      </label>
+
+      <input
+        type="date"
+        id="data-nascimento"
+        min="1995-06-16"
+        required
+      >
+
+      <button type="submit">
+        🔭 Buscar Foto Espacial
+      </button>
+
+    </form>
+
+    <div id="loading" class="loading hidden">
+      Buscando na galáxia... 🌌
+    </div>
+
+    <div id="erro" class="erro hidden"></div>
+
+    <section id="resultado" class="card hidden">
+
+      <span class="badge">NASA APOD</span>
+
+      <h2 id="titulo"></h2>
+
+      <p id="data-exibida" class="data-texto"></p>
+
+      <div id="media-container"></div>
+
+      <h3>Sobre esta publicação</h3>
+
+      <p id="descricao"></p>
+
+      <p id="credito" class="credito"></p>
+
+    </section>
+
+    <footer>
+      Dados fornecidos pela NASA Astronomy Picture of the Day.
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
